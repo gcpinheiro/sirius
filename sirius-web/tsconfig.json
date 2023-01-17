@@ -22,12 +22,36 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@src/*": [
+        "./*"
+      ],
+      "@app/*": [
+        "./app/*"
+      ],
+      "@assets/*": [
+        "./assets/*"
+      ],
+      "@environments/*": [
+        "./environments/*"
+      ],
+      "@core/*": [
+        "./app/core/*"
+      ],
+      "@shareds/*": [
+        "./app/shareds/*"
+      ],
+      "@features/*": [
+        "./app/features/*"
+      ]
+    },
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "strictPropertyInitialization": false
   }
 }

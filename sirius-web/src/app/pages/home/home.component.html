@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="left-bar">
+    <app-left-bar></app-left-bar>
+  </div>
+
+  <div class="content">
+    <div class="title-and-tabs" style="overflow-y: scroll;">
+      <app-header></app-header>
+
+      <mat-tab-group style="    padding: 0 8px;
+      box-sizing: border-box;">
+        <mat-tab label="To do" isActive="n">
+          <app-todo [result]="result" [listTodo]="listTodo"></app-todo>
+        </mat-tab>
+        <mat-tab label="Completed">
+          <app-completed></app-completed>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+
+      <button class="add-task" (click)="openDialog()">
+        <div class="button-add">
+          <img src="assets/images/icons/add-task.svg" alt="">
+          <span>Add a task</span>
+        </div>
+      </button>
+
+  </div>
+</div>

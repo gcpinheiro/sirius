@@ -1,0 +1,15 @@
+<div class="container-card" (click)="openDialog()">
+  <div class="infos">
+    <div class="checkbox">
+      <input type="checkbox" name="checkbox" id="" [checked]="checked" (click)="changeStateCheckbox()">
+    </div>
+    <div class="infos-for-to-do">
+      <h1>{{taskName}}</h1>
+      <span>{{dayToDo}}</span>
+    </div>
+  </div>
+
+  <div class="favorites">
+    <img [src]="icon" alt="" (click)="handleIcon()">
+  </div>
+</div>

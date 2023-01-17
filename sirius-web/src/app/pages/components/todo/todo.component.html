@@ -1,0 +1,8 @@
+<ng-container *ngFor="let todo of listTodo">
+  <app-card
+    [taskName]="todo.name"
+    [checked]="todo.done"
+    [dayToDo]="todo.created_at"
+    [id]="todo.id"
+  ></app-card>
+</ng-container>
